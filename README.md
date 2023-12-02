@@ -10,6 +10,9 @@
 sudo mkdir -p /var/snap/microk8s/common/
 sudo cp microk8s/microk8s-config.yaml /var/snap/microk8s/common/.microk8s.yaml
 sudo snap install microk8s --classic
+```
+
+```bash
 microk8s enable dns
 microk8s enable metallb 192.168.1.200-192.168.1.210
 ```
