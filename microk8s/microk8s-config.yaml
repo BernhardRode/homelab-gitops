@@ -1,0 +1,8 @@
+---
+version: 0.1.0
+addons:
+  - name: dns
+    args: [1.1.1.1, 8.8.8.8]
+  - name: hostpath-storage
+  - name: metallb
+    args: [192.168.1.200-192.168.1.210]    

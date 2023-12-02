@@ -1,0 +1,11 @@
+---
+# data-hostpath-sc.yaml
+kind: StorageClass
+apiVersion: storage.k8s.io/v1
+metadata:
+  name: data-hostpath
+provisioner: microk8s.io/hostpath
+reclaimPolicy: Delete
+parameters:
+  pvDir: /data
+volumeBindingMode: WaitForFirstConsumer
